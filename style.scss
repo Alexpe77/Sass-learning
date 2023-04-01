@@ -1,0 +1,96 @@
+$orange: orangered;
+$txtcolor: whitesmoke;
+
+body {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.card {
+    width: 500px;
+    height: 700px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+    border-radius: 2%;
+    background-color: $txtcolor;
+}
+
+.date {
+    width: 60px;
+    height: 60px;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 20px;
+    margin-top: 20px;
+    p {
+        text-align: justify;
+    }
+}
+
+.onglet-photo {
+    width: 90px;
+    height: 40px;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    margin-top: -20px;
+    p {
+        color: $txtcolor;
+    }
+}
+
+.cardtop {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("india1.jpg");
+    border-radius: 2%;
+    height: 400px;
+}
+
+.container {
+    height: 200px;
+    transition: transform 1s;
+    &:hover {
+        transform: translateY(-50%);
+        backdrop-filter: blur(5px);
+    }
+}
+
+.contenu {
+    background-color: $txtcolor;
+    height: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.text {
+    background-color: $txtcolor;
+    margin-left: 20px;
+    
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+    }
+}
+
+.txt1 {
+    color: $orange;
+    font-size: 18px;
+
+    .paragraph {
+        text-align: justify;
+        font-family: 'PT Sans', sans-serif;
+    }
+}
